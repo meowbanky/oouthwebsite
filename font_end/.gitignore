@@ -1,0 +1,7 @@
+node_modules\n.DS_Store\ndist\n*.local
+.env
+.vercel
+.env.production
+
+.codegpt
+node_modules

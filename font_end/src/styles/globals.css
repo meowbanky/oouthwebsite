@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root Variables */
+:root {
+  --primary: #0094DE;
+  --secondary: #1a365d;
+  --success: #0f766e;
+  --warning: #b45309;
+  --danger: #dc2626;
+  --neutral: #1f2937;
+}
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply antialiased text-gray-800;
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold;
+}
+
+/* Custom Components */
+@layer components {
+  .btn-primary {
+    @apply bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors;
+  }
+
+  .btn-outline {
+    @apply border-2 border-blue-600 text-blue-600 px-6 py-2 rounded-lg hover:bg-blue-50 transition-colors;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none;
+  }
+
+  .section-padding {
+    @apply py-16;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Custom Animations */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-500 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-blue-600;
+}
+
+/* Newsletter Form Styles */
+.newsletter {
+  @apply bg-blue-600 text-white py-12;
+}
+
+.newsletter-box {
+  @apply max-w-md mx-auto;
+}
+
+.newsletter-box input {
+  @apply w-full px-4 py-2 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.newsletter-box button {
+  @apply bg-blue-700 text-white px-6 py-2 rounded-r-lg hover:bg-blue-800 transition-colors;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  @apply fixed inset-0 bg-black bg-opacity-50 z-50;
+}
+
+.modal-content {
+  @apply bg-white rounded-lg shadow-xl max-w-md mx-auto mt-20 p-6;
+}
+
+/* Responsive Images */
+.img-responsive {
+  @apply w-full h-auto;
+}
+
+/* Department Cards */
+.department-card {
+  @apply bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow;
+}
+
+/* Doctor Cards */
+.doctor-card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden;
+}
+
+.doctor-social {
+  @apply flex justify-center space-x-4 mt-4;
+}
+
+/* Service Grid */
+.service-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+}
+
+/* Footer Styles */
+.footer-widget {
+  @apply space-y-4;
+}
+
+.footer-title {
+  @apply text-lg font-semibold mb-4;
+}
+
+.footer-link {
+  @apply text-gray-400 hover:text-white transition-colors;
+}
+
+/* Media Queries */
+@media (max-width: 640px) {
+  .container-custom {
+    @apply px-4;
+  }
+
+  .section-padding {
+    @apply py-12;
+  }
+}

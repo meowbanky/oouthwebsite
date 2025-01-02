@@ -1,2 +1,33 @@
+# Ignore node_modules in both folders
+back_end/node_modules/
+font_end/node_modules/
 
-.codegpt
+# Ignore build artifacts in both folders
+back_end/build/
+font_end/build/
+
+# Ignore environment files in both folders
+back_end/.env
+font_end/.env
+
+# Ignore IDE/editor files in both folders
+back_end/.idea/
+font_end/.idea/
+back_end/.vscode/
+font_end/.vscode/
+
+# Ignore OS-specific files in both folders
+back_end/.DS_Store
+font_end/.DS_Store
+back_end/Thumbs.db
+font_end/Thumbs.db
+back_end/Desktop.ini
+font_end/Desktop.ini
+
+# Ignore logs and temporary files in both folders
+back_end/*.log
+font_end/*.log
+back_end/*.tmp
+font_end/*.tmp
+back_end/temp/
+font_end/temp/

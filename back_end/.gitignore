@@ -1,0 +1,23 @@
+node_modules/ssh2/test/fixtures/id_rsa
+# Ignore node_modules
+node_modules/
+
+# Ignore build artifacts
+build/
+
+# Ignore environment files
+.env
+
+# Ignore IDE/editor files
+.idea/
+.vscode/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+temp/
